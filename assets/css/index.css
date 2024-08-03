@@ -1,0 +1,21 @@
+#top-header {
+  background-color: var(--button);
+  color: var(--text);
+  font-size: 14px;
+  height: 48px;
+  line-height: 21px;
+}
+#top-header .container {
+  height: 100%;
+}
+#top-header .container .offer {
+  font-weight: var(--regular);
+}
+#top-header .container .offer .shop-now {
+  color: inherit;
+  font-weight: var(--semibold);
+}
+#top-header .container .language {
+  color: inherit;
+  margin-left: auto;
+}

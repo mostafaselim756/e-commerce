@@ -11,5 +11,11 @@ function createElement(tag = 'div', attrs = {}, content) {
     element.setAttribute(name, value);
   });
 
+  if (Array.isArray(content)) element.appendChildren(...content);
+  else if (typeof content == 'object') element.appendChild(content);
+  else if (typeof content == 'string') element.appendChild(
+    document.createTextNode(content)
+  );
+
   return element;
 }
